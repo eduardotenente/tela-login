@@ -7,28 +7,26 @@
     <title>Login</title>
 </head>
 <body>
-    <header>
-        <h1>Faça seu login</h1>
-    </header>
     <main>
         <section id="formulario">
+            <h1>Faça seu login</h1>
             <form action="cadastro.php" method="post" autocomplete="on">
                 <div>
-                    <label for="iemail">E-mail</label>
-                    <input type="email" name="email" id="iemail">
+                    <p><label for="iemail">E-mail</label></p>
+                    <input type="email" name="email" id="iemail" required minlength="8" maxlength="20" placeholder="E-mail" autocomplete="email">
                 </div>
                 <div>
-                    <label for="isenha">Senha</label>
-                    <input type="password" name="senha" id="isenha">
+                    <p><label for="isenha">Senha</label></p>
+                    <input type="password" name="senha" id="isenha" required minlength="6" maxlength="20" placeholder="Senha" autocomplete="current-password">
                 </div>
-                <div>
-                    <a href="#">Esqueci minha senha</a>
+                <div id="esqueci">
+                    <a href="#" target="_self" rel="internal">Esqueci minha senha</a>
                 </div>
                 <div>
                     <input type="submit" value="Login">
                 </div>
-                <div>
-                    <a href="#">Ainda não tem uma senha?</a>
+                <div id="conta">
+                    <a href="#" target="_self" rel="internal">Ainda não tem uma conta?</a>
                 </div>
             </form>
         </section>
