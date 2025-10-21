@@ -14,17 +14,22 @@ body, html {
 
 main {
     display: flex;
-    justify-content: space-evenly;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
 
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 
-    width: 80%;
+    width: 75%;
     height: 430px;
     overflow: hidden;
     border-radius: 15px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+    transition: width .5s, height .5s;
+    transition-timing-function: ease-in-out;
 }
 
 
@@ -50,11 +55,10 @@ main > section > h1 {
     font-size: 2.3em;
     margin-top: 10px;
     margin-bottom: 10px;
-    border: 3px solid linear-gradient(to right, #36326D, #655095, #B796F1, #42477E);
 }
 
 form {
-    padding: 10px;
+    padding: 10px 10px 10px 30px;
 }
 
 div {
@@ -65,7 +69,7 @@ div {
 
 div#esqueci, div#conta {
     text-align: right;
-    width: 95%;
+    width: 90%;
 }
 
 div#conta {
@@ -89,7 +93,7 @@ input {
     border-radius: 10px;
     border: rgb(46, 46, 46);
     padding: 13px 10px;
-    width: 80%;
+    width: 75%;
 }
 
 input[type=submit] {

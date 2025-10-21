@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="/estilos/media-query.css">
     <title>Login</title>
 </head>
 <body>
@@ -13,20 +14,20 @@
             <form action="cadastro.php" method="post" autocomplete="on">
                 <div>
                     <p><label for="iemail">E-mail</label></p>
-                    <input type="email" name="email" id="iemail" required minlength="8" maxlength="20" placeholder="E-mail" autocomplete="email">
+                    <input type="email" name="email" id="iemail" required minlength="8" maxlength="30" placeholder="E-mail" autocomplete="email">
                 </div>
                 <div>
                     <p><label for="isenha">Senha</label></p>
                     <input type="password" name="senha" id="isenha" required minlength="6" maxlength="20" placeholder="Senha" autocomplete="current-password">
                 </div>
                 <div id="esqueci">
-                    <a href="#" target="_self" rel="internal">Esqueci minha senha</a>
+                    <a href="#" target="_self" rel="internal"><abbr title="Reescrever a senha">Esqueci minha senha</abbr></a>
                 </div>
                 <div>
-                    <input type="submit" value="Login">
+                    <abbr title="Fazer login"><input type="submit" value="Login"></abbr>
                 </div>
                 <div id="conta">
-                    <a href="#" target="_self" rel="internal">Ainda não tem uma conta?</a>
+                    <a href="#" target="_self" rel="internal"><abbr title="Crie uma conta">Ainda não tem uma conta?</abbr></a>
                 </div>
             </form>
         </section>
