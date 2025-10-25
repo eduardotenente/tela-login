@@ -4,13 +4,6 @@
         /* CELULAR */
 @media screen and (min-width: 420px) and (max-width: 766px) {
 
-    body {
-        background: rgb(41, 41, 41) url(../imagens/fundo.jpeg) center center no-repeat fixed;
-        background-size: cover;
-        height: 100vh;
-        width: 100vw;
-    }
-
     main {
         width: 95%;
         height: 430px;
